@@ -32,7 +32,7 @@ jobs:
         with:
           context: . # Specifies the build context (current directory)
           push: true # Set to true to push the image to Docker Hub
-          tags: | # Defines the tags for the Docker image
-            ${{ secrets.DOCKER_HUB_USERNAME }}/nginx-custom-server:latest # Tag with 'latest'
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/nginx-custom-server:latest  # Defines the tags for the Docker image
+           
            
         
